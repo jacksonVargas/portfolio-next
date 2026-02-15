@@ -94,6 +94,7 @@ export function Header() {
                 key={index}
                 className='md:text-sm py-2 px-3 border rounded  hover:text-teal-500 hover:border-teal-500'
                 href={link.href}
+                onClick={() => setIsOpen(false)}
               >
                 {link.label}
               </a>
@@ -103,6 +104,7 @@ export function Header() {
                 className='py-2 px-3 border rounded hover:text-teal-500 hover:border-teal-500'
                 href='#'
                 target='_blank'
+                onClick={() => setIsOpen(false)}
               >
                 <Github size={20} />
               </a>
@@ -111,6 +113,7 @@ export function Header() {
                 className='py-2 px-3 border rounded hover:text-teal-500 hover:border-teal-500'
                 href='#'
                 target='_blank'
+                onClick={() => setIsOpen(false)}
               >
                 <Linkedin size={20} />
               </a>
