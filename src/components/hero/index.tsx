@@ -14,7 +14,7 @@ export function Hero() {
         <div>
           {/* Texto */}
           <div className='text-center space-y-4'>
-            <h1 className='text-2xl md:text-4xl lg:text-5xl mb-2'>
+            <h1 className='text-3xl md:text-4xl lg:text-5xl mb-2'>
               Olá, meu nome é{' '}
               <span className='text-teal-500'>Jackson Vargas</span>
             </h1>
