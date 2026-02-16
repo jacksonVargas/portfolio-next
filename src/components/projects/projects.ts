@@ -24,7 +24,7 @@ export const projects: ProjectsProps[] = [
       'Next',
       'Shadcn',
       'Api-Routes',
-      'Tailwndcss',
+      'Tailwindcss',
       'Prisma',
       'Neon',
       'PostgresSQL',

@@ -22,8 +22,8 @@ export function CardProjects() {
           />
 
           <div className='px-5'>
-            <h3 className='text-2xl font-semibold'>{project.title}</h3>
-            <p className='text-zinc-500 mb-4'>{project.info}</p>
+            <h3 className='text-xl font-semibold'>{project.title}</h3>
+            <p className='md:text-sm text-zinc-500 mb-4'>{project.info}</p>
             <ul className='flex flex-wrap gap-1'>
               {project.tecs.map(tec => (
                 <Badge key={tec} className='bg-black text-white select-none'>
