@@ -26,7 +26,10 @@ export function CardProjects() {
             <p className='md:text-sm text-zinc-500 mb-4'>{project.info}</p>
             <ul className='flex flex-wrap gap-1'>
               {project.tecs.map(tec => (
-                <Badge key={tec} className='bg-black text-white select-none'>
+                <Badge
+                  key={tec}
+                  className='bg-black text-white select-none max-md:text-sm'
+                >
                   {tec}
                 </Badge>
               ))}
