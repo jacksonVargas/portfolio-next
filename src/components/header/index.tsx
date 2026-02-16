@@ -55,7 +55,7 @@ export function Header() {
   return (
     <>
       <header className='w-full fixed z-1 top-0 border-b bg-background'>
-        <nav className='max-w-5xl mx-auto max-md:py-3 px-5 flex justify-between items-center'>
+        <nav className='max-w-6xl mx-auto max-md:py-3 px-5 flex justify-between items-center'>
           <a href='#' className='text-xl'>
             JACKSON <span className='text-teal-500'>VARGAS</span>
           </a>
