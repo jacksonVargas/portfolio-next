@@ -22,8 +22,8 @@ export const projects: ProjectsProps[] = [
     title: 'DevControle',
     info: 'Sistema para gerenciamento de clientes e chamados.',
     tecs: ['Next', 'Typescript', 'Shadcn', 'Api-Routes', 'Tailwindcss', 'Prisma', 'Neon', 'PostgresSQL'],
-    linkGit: 'https://github.com/jacksonVargas/dev_controle_app',
-    linkPrev: 'https://dev-controle-app.vercel.app/',
+    linkGit: 'https://github.com/jacksonVargas/controle',
+    linkPrev: 'https://controle-mauve-seven.vercel.app/dashboard',
   },
   {
     id: 2,
