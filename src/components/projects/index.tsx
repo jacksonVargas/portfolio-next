@@ -8,7 +8,7 @@ export function Projects() {
       <section id='projects' className='py-15'>
         <Title
           title='PROJETOS RECENTES'
-          span='Alguns dos projetos que desenvolvi recentemente, demonstrando minhas habilidades e paixão por criar experiências digitais.'
+          span='Projetos recentes que desenvolvi, onde aplico minhas habilidades para criar experiências digitais modernas e bem estruturadas.'
         />
 
         <CardProjects />

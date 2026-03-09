@@ -2,7 +2,8 @@
 
 // Hooks
 import { useState, useEffect, useRef } from 'react'
-import { Menu, X, Github, Linkedin } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 
 // Componentes
 import { ModeToggle } from '@/components/mode-toggle'
@@ -60,23 +61,28 @@ export function Header() {
             JACKSON <span className='text-teal-500'>VARGAS</span>
           </a>
 
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className='md:hidden cursor-pointer hover:text-teal-500'
-          >
+          <button onClick={() => setIsOpen(!isOpen)} className='md:hidden cursor-pointer hover:text-teal-500'>
             {isOpen ? <X size={25} /> : <Menu size={25} />}
           </button>
 
           <ul className='hidden md:flex items-center divide-x border-x'>
             {links.map((link, index) => (
-              <a
-                key={index}
-                className='md:text-sm py-3 px-5  hover:text-teal-500'
-                href={link.href}
-              >
+              <a key={index} className='md:text-sm py-3 px-5  hover:text-teal-500' href={link.href}>
                 {link.label}
               </a>
             ))}
+            <a
+              className='py-3 px-5 hover:text-teal-500'
+              href='https://github.com/jacksonVargas'
+              target='_blank'
+              onClick={() => setIsOpen(false)}
+            >
+              <FaGithub size={20} />
+            </a>
+
+            <a className='py-3 px-5 hover:text-teal-500' href='#' target='_blank' onClick={() => setIsOpen(false)}>
+              <FaLinkedin size={20} />
+            </a>
             <ModeToggle />
           </ul>
         </nav>
@@ -102,11 +108,11 @@ export function Header() {
             <div className='flex items-center gap-2 mt-2'>
               <a
                 className='py-2 px-3 border rounded hover:text-teal-500 hover:border-teal-500'
-                href='#'
+                href='https://github.com/jacksonVargas'
                 target='_blank'
                 onClick={() => setIsOpen(false)}
               >
-                <Github size={20} />
+                <FaGithub size={20} />
               </a>
 
               <a
@@ -115,7 +121,7 @@ export function Header() {
                 target='_blank'
                 onClick={() => setIsOpen(false)}
               >
-                <Linkedin size={20} />
+                <FaLinkedin size={20} />
               </a>
             </div>
 
