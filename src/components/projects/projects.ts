@@ -4,6 +4,7 @@ import { StaticImageData } from 'next/image'
 import devControle from '@/assets/dev-controle.png'
 import login from '@/assets/login.png'
 import devGames from '@/assets/dev-games.png'
+import devShop from '@/assets/dev-shop.png'
 
 export interface ProjectsProps {
   id: number
@@ -21,7 +22,16 @@ export const projects: ProjectsProps[] = [
     image: devControle,
     title: 'DevControle',
     info: 'Sistema para gerenciamento de clientes e chamados.',
-    tecs: ['Next', 'Typescript', 'Shadcn', 'Api-Routes', 'Tailwindcss', 'Prisma', 'Neon', 'PostgresSQL'],
+    tecs: [
+      'Next',
+      'Typescript',
+      'Shadcn',
+      'Api-Routes',
+      'Tailwindcss',
+      'Prisma',
+      'Neon',
+      'PostgresSQL',
+    ],
     linkGit: 'https://github.com/jacksonVargas/controle',
     linkPrev: 'https://controle-mauve-seven.vercel.app/dashboard',
   },
@@ -30,7 +40,16 @@ export const projects: ProjectsProps[] = [
     image: login,
     title: 'Login Better Auth',
     info: 'Sistema de login com email/senha e login social usando better-auth.',
-    tecs: ['Next', 'Typescript', 'Shadcn', 'Better-Auth', 'Tailwindcss', 'Prisma', 'Neon', 'PostgresSQL'],
+    tecs: [
+      'Next',
+      'Typescript',
+      'Shadcn',
+      'Better-Auth',
+      'Tailwindcss',
+      'Prisma',
+      'Neon',
+      'PostgresSQL',
+    ],
     linkGit: 'https://github.com/jacksonVargas/login-better-auth',
     linkPrev: 'https://login-better-auth.vercel.app/login',
   },
@@ -42,5 +61,14 @@ export const projects: ProjectsProps[] = [
     tecs: ['Next', 'Typescript', 'Shadcn', 'Tailwindcss', 'Api'],
     linkGit: 'https://github.com/jacksonVargas/dev-games',
     linkPrev: 'https://dev-games-seven.vercel.app',
+  },
+  {
+    id: 4,
+    image: devShop,
+    title: 'DevShop',
+    info: 'Sistema de carrinho de compras.',
+    tecs: ['Next', 'Typescript', 'Shadcn', 'Tailwindcss'],
+    linkGit: 'https://github.com/jacksonVargas/dev-shop',
+    linkPrev: 'https://dev-shop-five-weld.vercel.app',
   },
 ]
