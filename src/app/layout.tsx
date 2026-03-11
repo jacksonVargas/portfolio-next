@@ -4,7 +4,16 @@ import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 
 export const metadata: Metadata = {
-  title: 'Meu Portfolio'
+  title: 'Meu Portfólio',
+  openGraph: {
+    title: 'Meu Portfólio',
+    description: 'Transformando ideias em soluções reais.',
+    type: 'website',
+    url: 'https://portfolio-next-gamma-liard.vercel.app/',
+  },
+  alternates: {
+    canonical: 'https://portfolio-next-gamma-liard.vercel.app/',
+  },
 }
 
 const font = Montserrat({ subsets: ['latin'] })
