@@ -10,6 +10,13 @@ export const metadata: Metadata = {
     description: 'Transformando ideias em soluções reais.',
     type: 'website',
     url: 'https://portfolio-next-gamma-liard.vercel.app/',
+    images: [
+      {
+        url: 'https://portfolio-next-gamma-liard.vercel.app/opengraph-image.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
   },
   alternates: {
     canonical: 'https://portfolio-next-gamma-liard.vercel.app/',
