@@ -61,13 +61,20 @@ export function Navbar() {
             JACKSON <span className='text-teal-500'>VARGAS</span>
           </a>
 
-          <button onClick={() => setIsOpen(!isOpen)} className='md:hidden cursor-pointer hover:text-teal-500'>
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className='md:hidden cursor-pointer hover:text-teal-500'
+          >
             {isOpen ? <X size={25} /> : <Menu size={25} />}
           </button>
 
           <ul className='hidden md:flex items-center divide-x border-x'>
             {links.map((link, index) => (
-              <a key={index} className='md:text-sm py-3 px-5  hover:text-teal-500' href={link.href}>
+              <a
+                key={index}
+                className='md:text-sm py-3 px-5  hover:text-teal-500'
+                href={link.href}
+              >
                 {link.label}
               </a>
             ))}
@@ -80,7 +87,12 @@ export function Navbar() {
               <FaGithub size={20} />
             </a>
 
-            <a className='py-3 px-5 hover:text-teal-500' href='#' target='_blank' onClick={() => setIsOpen(false)}>
+            <a
+              className='py-3 px-5 hover:text-teal-500'
+              href='https://www.linkedin.com/in/jackson-vargas-023129391/'
+              target='_blank'
+              onClick={() => setIsOpen(false)}
+            >
               <FaLinkedin size={20} />
             </a>
             <ModeToggle />
@@ -117,7 +129,7 @@ export function Navbar() {
 
               <a
                 className='py-2 px-3 border rounded hover:text-teal-500 hover:border-teal-500'
-                href='#'
+                href='https://www.linkedin.com/in/jackson-vargas-023129391/'
                 target='_blank'
                 onClick={() => setIsOpen(false)}
               >
