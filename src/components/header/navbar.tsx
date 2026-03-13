@@ -82,6 +82,8 @@ export function Navbar() {
               className='py-3 px-5 hover:text-teal-500'
               href='https://github.com/jacksonVargas'
               target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Veja meu Github'
               onClick={() => setIsOpen(false)}
             >
               <FaGithub size={20} />
@@ -91,6 +93,8 @@ export function Navbar() {
               className='py-3 px-5 hover:text-teal-500'
               href='https://www.linkedin.com/in/jackson-vargas-023129391/'
               target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Veja meu Linkedin'
               onClick={() => setIsOpen(false)}
             >
               <FaLinkedin size={20} />
@@ -122,6 +126,8 @@ export function Navbar() {
                 className='py-2 px-3 border rounded hover:text-teal-500 hover:border-teal-500'
                 href='https://github.com/jacksonVargas'
                 target='_blank'
+                rel='noopener noreferrer'
+                aria-label='Veja meu Github'
                 onClick={() => setIsOpen(false)}
               >
                 <FaGithub size={20} />
@@ -131,6 +137,8 @@ export function Navbar() {
                 className='py-2 px-3 border rounded hover:text-teal-500 hover:border-teal-500'
                 href='https://www.linkedin.com/in/jackson-vargas-023129391/'
                 target='_blank'
+                rel='noopener noreferrer'
+                aria-label='Veja meu Linkedin'
                 onClick={() => setIsOpen(false)}
               >
                 <FaLinkedin size={20} />

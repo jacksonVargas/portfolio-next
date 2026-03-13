@@ -17,7 +17,7 @@ export function CardProjects() {
             src={project.image}
             alt={project.title}
             quality={100}
-            priority
+            sizes='(max-width: 768px) 100vw, 33vw'
             className='w-full h-full object-cover rounded-t-xl'
           />
 
@@ -37,14 +37,14 @@ export function CardProjects() {
 
             <div className='grid grid-cols-2 gap-2 mt-4'>
               <Button asChild className='bg-black hover:bg-teal-600 text-white'>
-                <a href={project.linkGit} target='_blank'>
+                <a href={project.linkGit} target='_blank' rel='noopener noreferrer' aria-label={`Ver código do projeto ${project.title}`}>
                   <Github />
                   Código
                 </a>
               </Button>
 
               <Button asChild className='bg-black hover:bg-teal-600 text-white'>
-                <a href={project.linkPrev} target='_blank'>
+                <a href={project.linkPrev} target='_blank' rel='noopener noreferrer' aria-label={`Veja como o projeto ficou ${project.title}`}>
                   <ExternalLink />
                   Demo
                 </a>
